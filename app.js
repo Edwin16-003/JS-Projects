@@ -177,7 +177,34 @@ if(userAge > 21){
     userMessage +="No entry";
 }
 console.log(userMessage);
-
+//Javascript typeof variables
+let str1 ="Edu";
+let str2 ="Rose";
+let val1 =undefined;
+let val2 = null;
+let myNum = 40;
+let rain = true;
+//display using typeof
+console.log(typeof str1);//string
+console.log(typeof str2);//string
+console.log(typeof val1);//undefined
+console.log(typeof val2);//null
+console.log(typeof myNum);//number
+console.log(typeof rain);//boolean
+/* arithmetic operation-exercise calculate the hypotenuse
+of a triangle*/
+let a = 4*2;
+let b = 12*2;
+let c = (a + b)*2;
+console.log(c);
+//date method
+const myDay= Date();
+let myYear =myDay.getYear();
+let myMonth = myDay.getMonth();
+//output date
+console.log(myDay);
+console.log(myYear);
+console.log(myMonth);
 
 
 
