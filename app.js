@@ -127,7 +127,15 @@ let myMonth = myDay.getMonth();
 console.log(myDay);
 console.log(myYear);
 console.log(myMonth);
-
+//function exercise
+//arrays
+const myTools =["pen","pencil","eraser"];
+//call a function
+getMyTool(myTools);
+function getMyTool(tools){
+    tools[1]="marker";
+    console.log(tools);
+}
 
 
 
