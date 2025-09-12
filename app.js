@@ -136,7 +136,16 @@ function getMyTool(tools){
     tools[1]="marker";
     console.log(tools);
 }
-
+//objects
+const myBudget ={
+    product:"laptop",price:500
+}
+//call a function
+getMyBudget(myBudget,myBudget.price);
+function getMyBudget(myBudget,doublePrice){
+   myBudget.doublePrice = doublePrice *2;
+   console.log(myBudget);
+}
 
 
 
