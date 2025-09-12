@@ -146,6 +146,35 @@ function getMyBudget(myBudget,doublePrice){
    myBudget.doublePrice = doublePrice *2;
    console.log(myBudget);
 }
-
-
+//simple shopping list project
+const myShoppingList =[];//create an array
+//call a function
+getToAddItems(myShoppingList);
+//function to add items
+function getToAddItems(shoppingList){
+    shoppingList.push("Milk","Bread","Apples");
+    console.log(shoppingList);
+}
+//remove items from the existing array
+//call a function
+getToRemoveItems(myShoppingList);
+//function to remove items
+function getToRemoveItems(removeItem){
+    removeItem.pop();
+    console.log(removeItem);
+}
+//diplay the final list
+//call a function
+displayList(myShoppingList);
+//function to display the final list    
+function displayList(finalList){
+    console.log(finalList);
+}
+//Clear the list
+//call a function
+clearList(myShoppingList);
+function clearList(clearAll){
+    clearAll.length =0;
+    console.log(clearAll);
+}
 
