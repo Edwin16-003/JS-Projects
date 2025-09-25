@@ -69,6 +69,37 @@ function addStudent(name,age,grade){
     const student = {name,age,grade};
     students.push(student);
 }
+addStudent("Rose",19,[70,80,90,100]);
+function addGrade(name,grade){
+    for(let i=0;i<students.length;i++){
+        if(students[i].name === name){
+            students[i].grade.push(grade);
+        }
+    }
+}
+addGrade("Edu",85,95,75,65,55);
+function getAverageGrade(name){
+    for(let i=0;i<students.length;i++){
+        if(students[i].name === name){  
+            const grades = students[i].grade;
+            const total = grades.reduce((acc,cur)=> acc + cur,0);
+            const average = total / grades.length;
+            return average;
+        }
+    }
+    return null;
+}
+function displayStudentInfo(name){
+    for(let i=0;i<students.length;i++){
+        if(students[i].name === name){
+            const averageGrade = getAverageGrade(name);
+            console.log(`Name: ${students[i].name}, Age: ${students[i].age}, Average Grade: ${averageGrade}`);
+            return;
+        }
+    }
+    console.log("Student not found");
+}
+
 //declare variables
 let userAge =parseInt(prompt("Enter your age"));
 let userMessage =`Your age is: ${userAge} `;
