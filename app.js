@@ -77,7 +77,7 @@ function addGrade(name,grade){
         }
     }
 }
-addGrade("Edu",85,95,75,65,55);
+addGrade("Edu",85,95,75,65,53);
 function getAverageGrade(name){
     for(let i=0;i<students.length;i++){
         if(students[i].name === name){  
