@@ -61,7 +61,14 @@ let friend3 ={
 };
 people.friends.push(friend1,friend2,friend3);
 console.log(people);
-
+//student management system mini project
+const students =[
+    {name:"Edu",age:21,grade:[50,60,54,80,72]}
+];
+function addStudent(name,age,grade){
+    const student = {name,age,grade};
+    students.push(student);
+}
 //declare variables
 let userAge =parseInt(prompt("Enter your age"));
 let userMessage =`Your age is: ${userAge} `;
