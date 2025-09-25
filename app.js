@@ -61,32 +61,7 @@ let friend3 ={
 };
 people.friends.push(friend1,friend2,friend3);
 console.log(people);
-//object and array project
-const theList =["Laurence","Svekis",true,35,null,undefined,{test:"one",score:55},["one","two"]];
-theList.pop();
-theList.shift();
-theList[0,0]="FIRST";
-theList[1]="Svekis";
-theList[2]="MIDDLE";
-theList[3]="hello World";
-theList[4]= "LAST";
-theList.shift();
-console.log(theList);
-//company product catalog
-const storeItems =[];
-const item1 ={
-    name:"T-shirt",design:"cotton",cost:100,quantity:20
-};
-const item2 ={
-    name:"coffee mug",design:"ceramic",cost:10,quantity:10
-};
-const item3 ={
-    name:"notebook",design:"kasuku",cost:50,quantity:30
-};
-let move =storeItems.push(item1,item2,item3);
-console.log(storeItems);
-let accessElement =storeItems[2];
-console.log(accessElement);
+
 //declare variables
 let userAge =parseInt(prompt("Enter your age"));
 let userMessage =`Your age is: ${userAge} `;
