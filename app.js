@@ -190,4 +190,5 @@ function clearList(clearAll){
     clearAll.length =0;
     console.log(clearAll);
 }
-
+//end of app.js
+// --- IGNORE ---
