@@ -3,7 +3,7 @@ const arrQuestion=[{questions:"",answer:""},
     {questions:"",answer:""}
 ];
 const quest =findQ(arrQuestion);
-console.log();
+console.log("The question is:",quest.questions);
 function findQ(array){
     for(i=0;i<array.length;i++){
         let random=Math.floor(Math.random()*array.length);
