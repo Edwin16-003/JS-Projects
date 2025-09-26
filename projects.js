@@ -1,5 +1,5 @@
 //small quiz program
-const arrQuestion=[{questions:"What is an array?",answer:"non-primitive data type"},
+const arrQuestion=[{questions:"What is an array?",answer:"non-primitive value"},
     {questions:"Name one array method that can enter some elements into an empty array",answer:"push method"}
 ];
 //call a function to get a random question
@@ -19,10 +19,10 @@ findAnswer(arrQuestion);
 //check if the answer is correct
 function findAnswer(array){
  let userAnswer=prompt("What is your answer?");
- if(array.answer === userAnswer){
+ if(quest.answer === userAnswer){
     console.log("Correct answer");
  }else{
     console.log("Oops!,try again");
  }
- return userAnswer;
+ return array;
 }
