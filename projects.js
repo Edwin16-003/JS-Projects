@@ -1,6 +1,6 @@
 //small quiz program
-const arrQuestion=[{questions:"",answer:""},
-    {questions:"",answer:""}
+const arrQuestion=[{questions:"What is an array?",answer:"non-primitive data type"},
+    {questions:"Name one array method that can enter some elements into an empty array",answer:"push method"}
 ];
 //call a function to get a random question
 const quest =findQ(arrQuestion);
