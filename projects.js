@@ -14,6 +14,15 @@ function findQ(array){
         return selectedQ;
     }
 }
-function findAnswer(){
-
+//call a function to get the answer from the user
+findAnswer(arrQuestion);
+//check if the answer is correct
+function findAnswer(array){
+ let userAnswer=prompt("What is your answer?");
+ if(array.answer === userAnswer){
+    console.log("Correct answer");
+ }else{
+    console.log("Oops!,try again");
+ }
+ return userAnswer;
 }
