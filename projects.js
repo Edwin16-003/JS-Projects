@@ -56,3 +56,5 @@ checkBalance(account);
 function checkBalance(Bank){
     return Bank.balance;
 }
+//diplay the transaction summary
+console.log(`${account.onwerName}, your account number is ${account.accountNumber}. Your current balance is $${checkBalance(account)} after depositing $1000 and withdrawing $5000.`);
