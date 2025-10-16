@@ -26,3 +26,9 @@ function findAnswer(array){
  }
  return array;
 }
+//Bank Account Manager
+const account ={
+    onwerName:"Edwin",
+    balance:10000,
+    accountNumber:"1234567890"
+};
