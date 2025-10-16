@@ -27,8 +27,32 @@ function findAnswer(array){
  return array;
 }
 //Bank Account Manager
+//create an object
 const account ={
     onwerName:"Edwin",
     balance:10000,
     accountNumber:"1234567890"
 };
+//use function to deposit money
+//call the function
+deposit(account,1000);
+//function
+function deposit(bank,depo){
+    let myBalance =bank.balance;
+    return myBalance + depo;
+}
+//use function to withdraw money
+//call the function
+withdraw(account,5000);
+//function
+function withdraw(bank,withdraw){
+    let myNewBalance =bank.balance;
+    return myNewBalance - withdraw;
+}
+//use function to check balance
+//call the function
+checkBalance(account);
+//function
+function checkBalance(Bank){
+    return Bank.balance;
+}
